@@ -1,0 +1,21 @@
+{
+  "name": "11---testing-webservices",
+  "version": "1.0.0",
+  "description": "Hometask solution for testing the Dropbox API using Postman and Newman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:dropbox": "newman run dropbox.collection.json -e dropbox.environment.json --delay-request 1000"
+  },
+  "keywords": [
+    "dropbox",
+    "api",
+    "postman",
+    "newman"
+  ],
+  "author": "Gergő Mátyus",
+  "license": "ISC",
+  "devDependencies": {
+    "newman": "^6.1.1"
+  }
+}
