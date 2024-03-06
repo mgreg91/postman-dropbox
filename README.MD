@@ -2,7 +2,17 @@
 
 INFORMATION
 
-- Before running the test script you have to modify the `dropbox.collection.json` at **line 96** to your own file location
+- Before running the test script you have to modify the `dropbox.collection.json` to your needs at this part:
+
+```
+"body": {
+	"mode": "file",
+	"file": {
+	"src": "/C:/Users/Gege/Desktop/terkep.png"
+	}
+},
+```
+
 - The location can be anywhere on your computer, but the file name has to be `terkep.png`
 - To run the newman scripts in CLI please use the following snippet: `npm run test:dropbox`
 
